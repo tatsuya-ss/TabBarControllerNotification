@@ -9,6 +9,8 @@ import UIKit
 
 final class SearchViewController: UIViewController {
     
+    var safeHandler: (Int) -> Void = { _ in }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +26,9 @@ final class SearchViewController: UIViewController {
 
     @IBAction private func didTapShowDetailVCButton(_ sender: Any) {
         let detailVC = DetailViewController()
+        detailVC.saveHandler = { [weak self] number in
+            self?.safeHandler(number)
+        }
         let navigation = UINavigationController(rootViewController: detailVC)
         present(navigation, animated: true, completion: nil)
     }

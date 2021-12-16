@@ -29,6 +29,9 @@ final class TabBarViewController: UITabBarController {
         reviewVC.tabBarItem = UITabBarItem(title: "レビュー", image: .remove, selectedImage: .actions)
         let searchVC = SearchViewController()
         searchVC.tabBarItem = UITabBarItem(title: "検索", image: .checkmark, selectedImage: .none)
+        searchVC.safeHandler = { [weak self] number in
+            print("TabBarViewController", number)
+        }
         controllers = [reviewVC, searchVC]
         UITabBar.appearance().isTranslucent = false
         UITabBar.appearance().backgroundColor = .systemYellow

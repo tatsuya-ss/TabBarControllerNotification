@@ -17,8 +17,22 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkd-3o-x8W">
+                    <rect key="frame" x="180.5" y="432.5" width="53" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="保存"/>
+                    <connections>
+                        <action selector="didTapSaveButton:" destination="-1" eventType="touchUpInside" id="b1H-Cv-txh"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Qkd-3o-x8W" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4V6-53-Edm"/>
+                <constraint firstItem="Qkd-3o-x8W" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Sij-4N-x9L"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="125"/>
         </view>
     </objects>
