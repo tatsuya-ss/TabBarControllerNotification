@@ -17,6 +17,8 @@
 		75E4A657276B26A700E9A838 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75E4A655276B26A700E9A838 /* ReviewViewController.xib */; };
 		75E4A65B276B26B900E9A838 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4A659276B26B900E9A838 /* SearchViewController.swift */; };
 		75E4A65C276B26B900E9A838 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75E4A65A276B26B900E9A838 /* SearchViewController.xib */; };
+		75E4A660276B30A400E9A838 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4A65E276B30A400E9A838 /* DetailViewController.swift */; };
+		75E4A661276B30A400E9A838 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75E4A65F276B30A400E9A838 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		75E4A655276B26A700E9A838 /* ReviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
 		75E4A659276B26B900E9A838 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		75E4A65A276B26B900E9A838 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		75E4A65E276B30A400E9A838 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		75E4A65F276B30A400E9A838 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +69,13 @@
 			isa = PBXGroup;
 			children = (
 				75E4A64D276B249300E9A838 /* TabBar */,
-				75E4A658276B26AC00E9A838 /* Search */,
+				75E4A64E276B24CB00E9A838 /* TabBarViewController.swift */,
+				75E4A64F276B24CB00E9A838 /* TabBarViewController.xib */,
 				75E4A653276B268A00E9A838 /* Review */,
+				75E4A654276B26A700E9A838 /* ReviewViewController.swift */,
+				75E4A655276B26A700E9A838 /* ReviewViewController.xib */,
+				75E4A658276B26AC00E9A838 /* Search */,
+				75E4A65D276B308900E9A838 /* Detail */,
 				75E4A639276B21ED00E9A838 /* AppDelegate.swift */,
 				75E4A63B276B21ED00E9A838 /* SceneDelegate.swift */,
 				75E4A642276B21EE00E9A838 /* Assets.xcassets */,
@@ -79,8 +88,6 @@
 		75E4A64D276B249300E9A838 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				75E4A64E276B24CB00E9A838 /* TabBarViewController.swift */,
-				75E4A64F276B24CB00E9A838 /* TabBarViewController.xib */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -88,8 +95,6 @@
 		75E4A653276B268A00E9A838 /* Review */ = {
 			isa = PBXGroup;
 			children = (
-				75E4A654276B26A700E9A838 /* ReviewViewController.swift */,
-				75E4A655276B26A700E9A838 /* ReviewViewController.xib */,
 			);
 			path = Review;
 			sourceTree = "<group>";
@@ -101,6 +106,15 @@
 				75E4A65A276B26B900E9A838 /* SearchViewController.xib */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		75E4A65D276B308900E9A838 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				75E4A65E276B30A400E9A838 /* DetailViewController.swift */,
+				75E4A65F276B30A400E9A838 /* DetailViewController.xib */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75E4A646276B21EE00E9A838 /* LaunchScreen.storyboard in Resources */,
+				75E4A661276B30A400E9A838 /* DetailViewController.xib in Resources */,
 				75E4A651276B24CB00E9A838 /* TabBarViewController.xib in Resources */,
 				75E4A657276B26A700E9A838 /* ReviewViewController.xib in Resources */,
 				75E4A65C276B26B900E9A838 /* SearchViewController.xib in Resources */,
@@ -179,6 +194,7 @@
 				75E4A65B276B26B900E9A838 /* SearchViewController.swift in Sources */,
 				75E4A63A276B21ED00E9A838 /* AppDelegate.swift in Sources */,
 				75E4A650276B24CB00E9A838 /* TabBarViewController.swift in Sources */,
+				75E4A660276B30A400E9A838 /* DetailViewController.swift in Sources */,
 				75E4A656276B26A700E9A838 /* ReviewViewController.swift in Sources */,
 				75E4A63C276B21ED00E9A838 /* SceneDelegate.swift in Sources */,
 			);

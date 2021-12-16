@@ -14,4 +14,12 @@ final class ReviewViewController: UIViewController {
         
     }
     
+    init() {
+        super.init(nibName: String(describing: "ReviewViewController"), bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
 }
