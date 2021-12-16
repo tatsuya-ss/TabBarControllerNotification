@@ -22,4 +22,10 @@ final class SearchViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    @IBAction private func didTapShowDetailVCButton(_ sender: Any) {
+        let detailVC = DetailViewController()
+        let navigation = UINavigationController(rootViewController: detailVC)
+        present(navigation, animated: true, completion: nil)
+    }
+    
 }
